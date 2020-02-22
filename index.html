@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/png" sizes="96x96" href="../favicon.ico.png">
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/parallax.css">
+    <style type="text/css" media="screen, projection">
+        .parallax-viewport {
+          width: 100%;
+          
+          height: 20em;
+          background-color: #aebcc9;
+        }
+    </style>
     
     <title>Ancestral Gods</title>
 </head>
 <body>
     <nav class="navbar fixed-top navbar-expand-xl justify-content-end">
-        <a class="navbar-brand d-none d-sm-block mr-auto" href="#"><img src="../img/logo.png" alt="Logo principal"></a>
-        <a class="navbar-brand d-block d-sm-none" href="#"><img src="../img/logo.png" width="210" alt="Logo principal"></a>
+        <a class="navbar-brand d-none d-sm-block mr-auto" href="#"><img src="img/logo.png" alt="Logo principal"></a>
+        <a class="navbar-brand d-block d-sm-none" href="#"><img src="img/logo.png" width="210" alt="Logo principal"></a>
         
         <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
             <span class="navbar-toggler-icon"></span>
@@ -23,7 +32,7 @@
             <ul class="navbar-nav text-right d-lg-flex align-items-center">
                 <li class="nav-item h-100">
                     <div class="logo2">
-                        <img src="../img/logo2.png" alt="Logo">
+                        <img src="img/logo2.png" alt="Logo">
                     </div>
                 </li>
                 <li class="nav-item h-100 active mr-4 btn-link-1">
@@ -41,40 +50,46 @@
             </ul>
         </div>
     </nav>
-    
-    
-    <div class="parallax-1">
-        <br>
-    </div>
-    <div style="background-color:black;text-align:center;padding:100px 100px;text-align: justify;">
-       
-    </div>
-
-
-    
-    
-       <div class="container-fluid">
-           <div class="row">
-               <div class="col-12 p-0">
-                   <img src="../img/img_parallax3.jpg" alt="" class="w-100">
-               </div>
-           </div>
-       </div>  
-    
-    <div class="parallax-0">
-        
-        <div class="container">
-            <div class="row justify-content-center">                
-                <div class="col-4 text-center"><a href="#" class="link-1">¿QUIERES SABER MÁS?</a></div>
-                <div class="col-4 text-center"><a href="#" class="link-1">CONTÁCTANOS</a></div>
+           
+    <div class="container-fluid">
+        <div class="row">
+            <div class="parallax-viewport" id="parallax">        
+                <!-- parallax layers -->
+                <div class="parallax-layer" style="width:860px; height:273px;">
+                    <img src="img/parallax_sketch/0_sun.png" alt="" style="position:absolute; left:300px; top:-12px;"/>
+                </div>
+                <div class="parallax-layer" style="width:920px; height:274px;">
+                    <img src="img/parallax_sketch/1_mountains.png" alt="" />
+                </div>
+                <div class="parallax-layer" style="width:1100px; height:284px;">
+                    <img src="img/parallax_sketch/2_hill.png" alt="" style="position:absolute; top:40px; left:0;" />
+                </div>
+                <div class="parallax-layer" style="width:1360px; height:320px;">
+                    <img src="img/parallax_sketch/3_wood.png" alt="" style="position:absolute; top:96px; left:0;"/>
+                </div>
             </div>
-                     
         </div>
     </div>
-     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-     <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
-     <script type="text/javascript" src="../js/parallax.js"></script>   
+   
+    <div class="container">
+        <div class="row justify-content-center">                
+            <div class="col-4 text-center"><a href="#" class="link-1">¿QUIERES SABER MÁS?</a></div>
+            <div class="col-4 text-center"><a href="#" class="link-1">CONTÁCTANOS</a></div>
+        </div>   
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery.parallax.js"></script>
+    <!-- Scripts -->
+    <script>
+        jQuery(document).ready(function(){
+          jQuery('#parallax .parallax-layer')
+          .parallax({
+            mouseport: jQuery('#parallax')
+          });
+        });
+    </script>  
 </body>
 </html>
