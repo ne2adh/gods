@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'CFSpaceship';
+    src: url("../fonts/CFSpaceship-Regular/CFSpaceship-Regular.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/CFSpaceship-Regular/CFSpaceship-Regular?#iefix") format("embedded-opentype"), 
+         url("../fonts/CFSpaceship-Regular/CFSpaceship-Regular.ttf") format("truetype"), 
+         url("../fonts/CFSpaceship-Regular/CFSpaceship-Regular.woff") format("woff"), 
+         url("../fonts/CFSpaceship-Regular/CFSpaceship-Regular.svg") format("svg");
+    font-style: normal;
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: 'mosk-semi-bold-600';
+    src: url("../fonts/mosk-semi-bold-600/mosk-semi-bold-600.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/mosk-semi-bold-600/mosk-semi-bold-600?#iefix") format("embedded-opentype"), 
+         url("../fonts/mosk-semi-bold-600/mosk-semi-bold-600.ttf") format("truetype"), 
+         url("../fonts/mosk-semi-bold-600/mosk-semi-bold-600.woff") format("woff"), 
+         url("../fonts/mosk-semi-bold-600/mosk-semi-bold-600.svg") format("svg");
+    font-style: normal;
+    font-weight: normal; 
+}
+
+body, html {
+    height: 100%;    
+    background-color: #000;
+}
+
+.container{
+    max-width: 960px !important;    
+}
+
+#bg-top{
+    background: url('../img/bg-menu.png') no-repeat top center;
+    
+}  
+  
+.link-1{
+    font-family: 'CFSpaceship';
+    font-size: 16.67px;
+    text-decoration: none;
+    background: url('../img/btn.png') no-repeat top left;
+    background-size: cover;
+    width: 263px;
+    height: 54px;
+    display: block;
+    line-height: 55px;
+    color: #ffb021;
+}
+
+.link-1:hover{
+    text-decoration: none;
+    background: transparent;
+    color: #ffb021;
+}
+
+.nav-item a {
+    font-family: 'mosk-semi-bold-600';
+    font-size: 12.5px;
+    color: #fff;
+}
+
+.navbar-nav > .active > a {
+    color: #fff;    
+}
+
+.nav-item > a:hover {
+    color: #fff;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("../img/menu.png");
+}
+
+
+.btn-link-1{
+    background-image: url("../img/estrella.png");
+    background-repeat: no-repeat;    
+    background-position: right top;     
+}
+
+.logo2{
+    position: relative;
+    
+}
+
+.rotar1  
+{  
+    -webkit-transform: rotate(-10deg);  
+    -moz-transform: rotate(-10deg);  
+    -ms-transform: rotate(-10deg);  
+    -o-transform: rotate(-10deg);  
+    transform: rotate(-10deg);  
+    
+    -webkit-transform-origin: 50% 50%;  
+    -moz-transform-origin: 50% 50%;  
+    -ms-transform-origin: 50% 50%;  
+    -o-transform-origin: 50% 50%;  
+    transform-origin: 50% 50%;
+} 
+
+.rotar2  
+{  
+    -webkit-transform: rotate(10deg);  
+    -moz-transform: rotate(10deg);  
+    -ms-transform: rotate(10deg);  
+    -o-transform: rotate(10deg);  
+    transform: rotate(10deg);  
+    
+    -webkit-transform-origin: 50% 50%;  
+    -moz-transform-origin: 50% 50%;  
+    -ms-transform-origin: 50% 50%;  
+    -o-transform-origin: 50% 50%;  
+    transform-origin: 50% 50%;
+} 
+
+.rotar3  
+{  
+    -webkit-transform: rotate(5deg);  
+    -moz-transform: rotate(5deg);  
+    -ms-transform: rotate(5deg);  
+    -o-transform: rotate(5deg);  
+    transform: rotate(5deg);  
+    
+    -webkit-transform-origin: 50% 50%;  
+    -moz-transform-origin: 50% 50%;  
+    -ms-transform-origin: 50% 50%;  
+    -o-transform-origin: 50% 50%;  
+    transform-origin: 50% 50%;
+} 
+
+@media only screen and (max-device-width: 1024px) {    
+    .rotar1, .rotar2,.rotar3{
+        transform-origin: none;
+        transform: none; 
+    }
+}
+.hi {
+    width: 150px;
+    height: 200px;
+    background-image: url('../img/fire.png');
+    animation: playX 1s steps(4) infinite,
+               playY 3s steps(3) infinite;
+  }
+  
+  @keyframes playX {
+    from {background-position-x: 0px;}
+    to {background-position-x: -600px;}
+  }
+  
+  @keyframes playY {
+    from {background-position-y: 0px;}
+    to {background-position-y: -600px;}
+  }
