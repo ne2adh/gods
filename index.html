@@ -1,131 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/parallax.css">
-    <style type="text/css" media="screen, projection">
-        .parallax-viewport {
-          width: 100%;          
-          height: 540px;          
-        }
-        .parallax-viewport-1 {
-          width: 100%;          
-          height: 1540px;          
-        }
-    </style>
-    
-    <title>Ancestral Gods</title>
-</head>
-<body>
-    <div class="container" id="bg-top">
-        <nav class="navbar navbar-expand-xl justify-content-center bg-transparent">
-            <a class="navbar-brand d-none d-sm-block mr-auto" href="#"><img src="img/logo.png" alt="Logo principal"></a>
-            <a class="navbar-brand d-block d-sm-none" href="#"><img src="img/logo.png" width="210" alt="Logo principal"></a>
-            
-            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
-                <ul class="navbar-nav text-right d-lg-flex align-items-center mx-auto">
-                    <li class="nav-item h-100">
-                        <div class="logo2">
-                            <img src="img/logo2.png" alt="Logo">
-                        </div>
-                    </li>
-                    <li class="nav-item h-100 active mr-4 btn-link-1">
-                        <a class="nav-link rotar1 pr-3 pt-3" href="#">NOSOTROS</a>
-                    </li>
-                    <li class="nav-item h-100 ml-2 mr-4 btn-link-1">
-                        <a class="nav-link rotar2 pr-3" href="#">SERVICIOS</a>
-                    </li>
-                    <li class="nav-item h-100 ml-2 mr-4 btn-link-1">
-                        <a class="nav-link rotar3 pt-3 pr-3" href="#">EXPERIENCIA</a>
-                    </li>
-                    <li class="nav-item h-100 ml-2 mr-4 btn-link-1">
-                        <a class="nav-link rotar1 mr-3" href="#">CONTACTO</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>    
-        <div class="row">
-            <div class="parallax-viewport" id="parallax">        
-                <!-- parallax layers -->
-                <div class="parallax-layer" style="width:920px; height:520px;">
-                    <img src="img/parallax_sketch/3_wood.png" alt="" style="position:absolute;bottom: 90px; left: 0;"/>
-                </div>
-                <div class="parallax-layer" style="width:100%; height:540px;">
-                    <img src="img/parallax_sketch/roca.png" alt="" style="position:absolute; bottom:0; left:0;"/>
-                </div>
-            </div>            
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="parallax-viewport-1" id="parallax-1">        
-                <!-- parallax layers -->                               
-                
-                <div class="parallax-layer" style="width:955px; height:1520px;">
-                    <img src="img/parallax_sketch/1_mountains.png" alt="" style="position:absolute;top: 230px; left: 0;"/>
-                </div>
-                <div class="parallax-layer" style="width:960px; height:1440px;">
-                    <img src="img/parallax_sketch/5_light.png" alt="" style="position:absolute;bottom: 355px; left: 60px;"/>
-                </div>
-                <div class="parallax-layer" style="width:960px; height:1540px;">
-                    <img src="img/parallax_sketch/2_hill.png" alt="" style="position:absolute; top:0; left:0;"/>
-                </div> 
-                <div class="parallax-layer" style="width:960px; height:1540px;">
-                    <img src="img/parallax_sketch/4_rock.png" alt="" style="position:absolute; bottom: 0; left: 0;"/>
-                </div>
-                <div class="parallax-layer" style="width:960px; height:1540px;">
-                    <img src="img/parallax_sketch/6_logo.png" alt="" style="position:absolute; bottom: 10px; left: 10px;"/>
-                </div>
-                <div class="parallax-layer" style="width:960px; height:1540px;">
-                    <div class="hi" style="position:absolute; bottom: 135px; left: 75px;">
-                    </div>
-                    <div class="hi" style="position:absolute; bottom: 135px; right: 50px;">
-                    </div>
-                </div>                
-            </div> 
-        </div>
-    </div>    
-    <div class="container pt-5 pb-5 mt-5 mb-5">
-        <div class="row justify-content-center">                
-            <div class="col-4 text-center">
-                <a href="#" class="link-1">¿QUIERES SABER MÁS?</a>
-            </div>
-            <div class="col-4 text-center"><a href="#" class="link-1">CONTÁCTANOS</a></div>
-        </div>   
-    </div>
-    <div class="container pt-5 pb-5">
-        <div class="row">
-            <br>
-        </div>
-    </div>
+<!-- code by webdevtrick ( https://webdevtrick.com ) -->
+<html lang="en" >
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
-    <script src="js/jquery.main.js"></script>
-    <script src="js/jquery.parallax.js"></script>
-    <!-- Scripts -->
-    <script>
-        jQuery(document).ready(function(){
-          jQuery('#parallax .parallax-layer')
-          .parallax({
-            mouseport: jQuery('#parallax')
-          });
-          jQuery('#parallax-1 .parallax-layer')
-          .parallax({
-            mouseport: jQuery('#parallax-1')
-          });
-        });
-    </script>  
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Parallax | Webdevtrick.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/parallax.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="title" class="slide header">
+        <h1>Pure CSS Parallax</h1>
+      </div>
+      
+      <div id="slide1" class="slide">
+        <div class="title">
+          <h1>Slide 1</h1>
+          <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+        </div>
+      </div>
+      
+      <div id="slide2" class="slide">
+        <div class="title">
+          <h1>Slide 2</h1>
+          <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+        </div>
+        <img src="https://lorempixel.com/640/480/abstract/6/">
+        <img src="https://lorempixel.com/640/480/abstract/4/"> 
+      </div>
+      
+      <div id="slide3" class="slide">
+        <div class="title">
+          <h1>Slide 3</h1>
+          <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+        </div>
+      </div>
+      
+      <div id="slide4" class="slide header">
+          <h1>The End</h1>
+      </div>
 </body>
 </html>
