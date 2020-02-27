@@ -1,0 +1,16 @@
+{
+  "name": "gods",
+  "version": "1.0.0",
+  "description": "Project for Ancestral Gods",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "Giancarlo Delgadillo",
+  "license": "ISC",
+  "homepage": "https://ne2adh.github.io/gods",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
