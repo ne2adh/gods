@@ -1,133 +1,64 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);
-
-html {
-  height: 100%;
-  overflow: hidden;
+body {
+  margin: 0;
+  color: white;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
-body { 
-  margin:0;
-  padding:0;
-	perspective: 1px;
-	transform-style: preserve-3d;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  font-family: Nunito;
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  background: black;
 }
 
 h1 {
-   font-size: 250%
-}
-
-p {
-  font-size: 140%;
-  line-height: 150%;
-  color: #333;
-}
-
-.slide {
-  position: relative;
-  padding: 25vh 10%;
-  min-height: 100vh;
-  width: 100vw;
-  box-sizing: border-box;
-  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
-	transform-style: inherit;
+  font-weight: 700;
 }
 
 img {
   position: absolute;
-  top: 50%;
-  left: 35%;
-  width: 320px;
-  height: 240px;
-  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
-  padding: 10px;
-  border-radius: 5px;
-  background: rgba(240,230,220, .7);
-  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+h1,
+h2 {
+  margin: 2rem 2rem 1rem;
+  padding: 0
 }
 
-img:last-of-type {
-  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+ul, p {
+  margin: 0 2rem 2rem;
+  padding: 0
 }
 
-.slide:before {
-  content: "";
+a {
+  color: white;
+}
+
+ul li {
+  margin: 0 1rem 0 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.teaser {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
-}
-
-.title {
-  width: 50%;
-  padding: 5%;
-  border-radius: 5px;
-  background: rgba(240,230,220, .7);
-  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
-}
-
-.slide:nth-child(2n) .title {
-  margin-left: 0;
-  margin-right: auto;
-}
-
-.slide:nth-child(2n+1) .title {
-  margin-left: auto;
-  margin-right: 0;
-}
-
-.slide, .slide:before {
-  background: 50% 50% / cover;  
-}
-
-.header {
+  height: 100%;
+  width: 100%;
+  color: white;
+  text-shadow: 0 0 5px black;
   text-align: center;
-  font-size: 175%;
-  color: #fff;
-  text-shadow: 0 2px 2px #000;
+  font-size: 2rem;
+}
+.teaser h1 {
+  margin-top: 0;
+  text-transform: uppercase;
 }
 
-#title {
-  background-image: url("https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg");
-  z-index:2;
-  width:100%;
-}
-
-#title h1 {
- transform: translateZ(.25px) scale(.75);
- transform-origin: 50% 100%;
-
-}
-
-#slide1:before {
-  background-image: url("https://images.pexels.com/photos/1342460/pexels-photo-1342460.jpeg");
-  transform: translateZ(-1px) scale(2);
-}
-
-#slide2 {
-  background-image: url("https://images.pexels.com/photos/34580/pexels-photo.jpg");
-  z-index:2;
-  width:100%;
-}
-
-#slide3{
-  width:100%;
-}
-
-#slide3:before {
-  background-image: url("https://images.pexels.com/photos/248515/pexels-photo-248515.png");
-  transform: translateZ(-1px) scale(2);
-}
-
-#slide4{
-  width:100%;
-}
-
-#slide4 {
-  background: #222;
+.teaser .content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
 }
