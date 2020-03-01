@@ -1,12 +1,17 @@
-.parallax-viewport {
-  position: relative;     /* relative, absolute, fixed */
-  overflow: hidden;
+.parallax1 {
+	position: relative;
+	background-image: url('../img/1_stars.png');
+	/* Full height */
+	height: 690px;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-.parallax-viewport-1 {
-  position: relative;     /* relative, absolute, fixed */
-  overflow: hidden;
-}
-.parallax-layer {
-  position: absolute;
+.parallax2 {
+	position: relative;
+	background-image: url('../img/2_cave2.png');
+	/* Full height */
+	height: 1310px;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
