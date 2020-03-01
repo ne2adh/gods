@@ -12,7 +12,39 @@
   <link href="css/parallax.css" rel="stylesheet" type="text/css">
 </head>
 <body>	
-		<div class="container">
+	<div class="container">        
+		<nav class="navbar navbar-expand-xl justify-content-center bg-transparent" style="position: absolute;top:0;z-index: 9;">
+			<a class="navbar-brand d-none d-sm-block mr-auto" href="#"><img src="img/logo.png" alt="Logo principal"></a>
+			<a class="navbar-brand d-block d-sm-none" href="#"><img src="img/logo.png" width="210" alt="Logo principal"></a>
+			
+			<button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+				<ul class="navbar-nav text-right d-lg-flex align-items-center mx-auto">
+					<li class="nav-item h-100">
+						<div class="logo2">
+							<img src="img/logo2.png" alt="Logo">
+						</div>
+					</li>
+					<li class="nav-item h-100 active mr-4 btn-link-1">
+						<a class="nav-link rotar1 pr-3 pt-3" href="#">NOSOTROS</a>
+					</li>
+					<li class="nav-item h-100 ml-2 mr-4 btn-link-1">
+						<a class="nav-link rotar2 pr-3" href="#">SERVICIOS</a>
+					</li>
+					<li class="nav-item h-100 ml-2 mr-4 btn-link-1">
+						<a class="nav-link rotar3 pt-3 pr-3" href="#">EXPERIENCIA</a>
+					</li>
+					<li class="nav-item h-100 ml-2 mr-4 btn-link-1">
+						<a class="nav-link rotar1 mr-3" href="#">CONTACTO</a>
+					</li>
+				</ul>
+			</div>
+		</nav>    
+		
+	</div> 	
+	<div class="container">
 		<div class="row">
 		  <div class="col-md-12">
 			<div class="parallax1">
@@ -35,7 +67,11 @@
 			<div class="parallax2">
 				<img src="img/2_rock_up.png" alt="" style="position: absolute;top: 0;" class="img-fluid">
 				<img src="img/4_hill.png" alt="" style="position: absolute;bottom: 0;" class="img-fluid">
-				<img src="img/6_logo.png" alt="" style="position: absolute;bottom:0;margin-left:auto;margin-right: auto;" class="img-fluid">				 
+				<img src="img/6_logo.png" alt="" style="position: absolute;bottom:0;margin-left:auto;margin-right: auto;" class="img-fluid">
+				<div class="w-100" style="position: absolute;bottom:0;margin-bottom: 130px;z-index: 9;">		
+					<div class="fire" style="left: 60px;float: left;position: relative;"></div>
+					<div class="fire" style="right: 60px;float: right;position: relative;"></div>
+				</div>				 
 			</div>
 		  </div>		  
 		</div>
