@@ -22,16 +22,22 @@
     font-weight: normal; 
 }
 
-body, html {
-    height: 100%;    
+body {    
     background-color: #000;
+    color: #fff;
+   
 }
 
 .container{
-    max-width: 960px !important;    
+    max-width: 960px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;    
 }
 
-  
+
+
+/* MENU NAVBAR */
+
 .link-1{
     font-family: 'CFSpaceship';
     font-size: 16.67px;
@@ -131,12 +137,19 @@ body, html {
         transform-origin: none;
         transform: none; 
     }
-    .w-100{
-        width: auto !important;
-      
+    .parallax1{
+        height: 230px !important;
+        
     }
+    .parallax2{
+        height: 570px !important;
+        background-position-x: center !important;
+    }
+    
 }
-.hi {    
+
+/* ANTORCHAs */
+.fire {    
     width: 150px;
     height: 200px;
     background-image: url('../img/fire.png');
