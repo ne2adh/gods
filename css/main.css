@@ -210,31 +210,31 @@ body {
         background-position-x: center !important;
     }
     .fire {    
-        width: 100px !important;
-        height: 133.3333px !important;
-        background-image: url('../img/fire3.png') !important;
+        width: 150px !important;
+        height: 200px !important;
+        background-image: url('../img/fire.png') !important;
         animation: playX 1.9999s steps(4) infinite,
                    playY 3.9999s steps(3) infinite !important;
       }
       
-      @keyframes playX {
-        from {background-position-x: 0px !important; }
-        to {background-position-x: -400px !important;}
-      }
-      
-      @keyframes playY {
-        from {background-position-y: 0px !important;}
-        to {background-position-y: -400px !important;}
-      }
+@keyframes playX {
+    from {background-position-x: 0px !important; }
+    to {background-position-x: -600px !important;}
+}
+
+@keyframes playY {
+    from {background-position-y: 0px !important;}
+    to {background-position-y: -600px !important;}
+}
 
     #der {
-        right: 12% !important;
+        right: 3% !important;
     }
     #izq{
-        left: 11% !important;
+        left: 4% !important;
     }
     #cuadro{
-        margin-bottom: 14%;
+        margin-bottom: 11%;
     }
 }
 
