@@ -10,15 +10,15 @@ var $ = jQuery.noConflict();
  */
   
   var initScrollTop = $(window).scrollTop();  
-  $('.parallax1').css({'background-position-y' : (initScrollTop/5)+'%'});
-  $('.parallax2').css({'background-position-y' : -(initScrollTop/45)+'%'});
+  $('.parallax1').css({'background-position-y' : (initScrollTop/10)+'%'});
+  $('.parallax2').css({'background-position-y' : -(initScrollTop/55)+'%'});
   
   $(window).scroll(function() {
     
     
   var scrollTop = $(window).scrollTop();    
-	$('.parallax1').css({'background-position-y' : (scrollTop/5)+'%'});
-	$('.parallax2').css({'background-position-y' : -(scrollTop/45)+'%'});
+	$('.parallax1').css({'background-position-y' : (scrollTop/10)+'%'});
+	$('.parallax2').css({'background-position-y' : -(scrollTop/55)+'%'});
 	
     
   });
