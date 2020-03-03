@@ -5,13 +5,15 @@
 	height: 690px;
 	background-repeat: no-repeat;
 	background-size: cover;
+	width: 100%;
 }
 
 .parallax2 {
 	position: relative;
 	background-image: url('../img/2_cave2.png');
 	/* Full height */
-	height: 1310px;
+	height: 1360px;
+	width: 100%;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
