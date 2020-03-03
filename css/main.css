@@ -152,7 +152,7 @@ body {
 
 
 #cuadro{
-    margin-bottom: 12%;
+    margin-bottom: 16%;
 }
 
 @media only screen and (max-device-width : 768px) { 
@@ -241,7 +241,7 @@ body {
 /* ANTORCHAs */
 .fire {    
     width: 150px;
-    height: 200px;
+    height: 150px;
     background-image: url('../img/fire.png');
     animation: playX 0.175s steps(4) infinite,
                playY 1.175s steps(3) infinite;
