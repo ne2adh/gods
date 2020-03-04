@@ -72,9 +72,9 @@ body {
 
 .nav-item > a:hover {
     color: #00aced;
-    /* -webkit-animation: neon2 1.5s ease-in-out infinite alternate */;
-    /* -moz-animation: neon2 1.5s ease-in-out infinite alternate */;
-    /* animation: neon2 1.5s ease-in-out infinite alternate; */
+    -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+    animation: neon2 1.5s ease-in-out infinite alternate;
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -152,7 +152,7 @@ body {
 
 
 #cuadro{
-    margin-bottom: 16%;
+    margin-bottom: 12%;
 }
 
 @media only screen and (max-device-width : 768px) { 
@@ -165,15 +165,15 @@ body {
         
     }
     .parallax2{
-        height: 530px !important;
+        height: 580px !important;
         background-position-x: center !important;
     }
     .fire{       
         width: 40px !important;
         height: 66.667px !important;
         background-image: url('../img/fire2.png') !important;
-        animation: playX 0.9999s steps(4) infinite,
-        playY 2.9999s steps(3) infinite;
+        animation: playX 0.4444s steps(8) infinite,
+        playY 0.6666s steps(6) infinite;
     }
     @keyframes playX {
         from {background-position-x: 0px !important;}
@@ -206,7 +206,7 @@ body {
         
     }
     .parallax2{
-        height: 1090px !important;
+        height: 1190px !important;
         background-position-x: center !important;
     }
     .fire {    
@@ -241,10 +241,10 @@ body {
 /* ANTORCHAs */
 .fire {    
     width: 150px;
-    height: 150px;
+    height: 200px;
     background-image: url('../img/fire.png');
-    animation: playX 0.175s steps(4) infinite,
-               playY 1.175s steps(3) infinite;
+    animation: playX 0.213s steps(4) infinite,
+               playY 0.672s steps(3) infinite;
   }
   
   @keyframes playX {
@@ -257,11 +257,11 @@ body {
     to {background-position-y: -600px;}
   }
 
-  /* @keyframes neon2 {
+  @keyframes neon2 {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
     }
     to {
       text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
     }
-  } */
+  }
