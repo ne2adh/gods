@@ -37,7 +37,7 @@ body {
 
 
 /* MENU NAVBAR */
-
+.link-1:hover {-moz-border-radius:50%;-webkit-border-radius:50%;-o-border-radius:50%;border-radius:50%}
 .link-1{
     font-family: 'mosk-semi-bold-600';
     font-size: 16.67px;
@@ -49,12 +49,22 @@ body {
     display: block;
     line-height: 55px;
     color: #ffb021;
+    transition:all .2s ease-in-out;
+    -webkit-transition:all .2s ease-in-out;
+    -moz-transition:all .2s ease-in-out;
+    -ms-transition:all .2s ease-in-out;
+    -o-transition:all .2s ease-in-out;
 }
 
 .link-1:hover{
     text-decoration: none;
     background: transparent url('../img/btn1.png') no-repeat top left;
     color: #ffb021;
+    transition:all .4s ease-in-out;
+    -webkit-transition:all .4s ease-in-out;
+    -moz-transition:all .4s ease-in-out;
+    -ms-transition:all .4s ease-in-out;
+    -o-transition:all .4s ease-in-out;
 }
 
 .nav-item a {
